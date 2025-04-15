@@ -79,7 +79,6 @@ int main() {
     printf("       *    *    *    *    *    *       *    *            *       *        *  *   *      *   \n ");
     printf("        ****  *  ****** ******* ******  *     *           ******  *        *  *    *     *     \n\n");
    
-   
     printf("=======================================================================================================\n\n\n");
 
     printf("Are you already registered? (Yes = 1 / No = 0): ");
@@ -241,6 +240,8 @@ int main() {
             attempts++;
             printf("Incorrect email or password. Attempts left: %d\n", 3 - attempts);
         }
+
+        fclose(filePtr);
     }
     return 0;
 }
